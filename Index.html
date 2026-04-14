@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>📝 My Todo List</h1>
+
+    <div class="input-section">
+      <input type="text" id="taskInput" placeholder="Enter new task">
+      <button onclick="addTodo()">Add</button>
+    </div>
+
+    <ul id="todoList">
+      <!-- Default 5 items -->
+      <li>Learn HTML <button class="delete-btn" onclick="removeTask(this)">❌</button></li>
+      <li>Practice JavaScript <button class="delete-btn" onclick="removeTask(this)">❌</button></li>
+      <li>Study Node.js <button class="delete-btn" onclick="removeTask(this)">❌</button></li>
+      <li>Build Projects <button class="delete-btn" onclick="removeTask(this)">❌</button></li>
+      <li>Prepare for Interview <button class="delete-btn" onclick="removeTask(this)">❌</button></li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
